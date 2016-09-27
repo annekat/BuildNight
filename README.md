@@ -42,17 +42,28 @@ https://devcenter.heroku.com/articles/container-registry-and-runtime
 AWS Deployment - ECS
 http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
 
-Simple activities
-1. Fork a simple Go app (search github for this)
-
-3. Create a .yaml file
-
+Simplest Activity
 
 1. Fork the GoServer from kindafearless
-2. Add a test file to the go App in Git (*note, it doesn't have to be a real test. You can copy and paste any test, you want it to fail)
-3. Update the yaml file with script: ./hello_test (or the name of your test file)
+2. Add a test file to the go App in Git (let's use a hello world test and make it fail)
+                package hello
+
+              import "testing"
+
+              func TestHello(t *testing.T){
+                expected := "Hello Go!"
+                actual := hello()
+                if actual != expected {
+                  t.Error("Test failed")
+                }
+              }
 4. Add the forked repo with Travis CI
-5. 
+5. Copy the token from your account and add it to your github rep *or we found that this happens automatically?
+6. In github, select Test 
+7. Go back to Travis - you should see the test has failed
+8. Add a hello world command to the Git Hub repo so the test will pass
+  in goserver.go, add the following command to the very end //hello world!
+    fmt.Printf("Hello, world.\n")
 
 For deploying to Heroku
 - Follow the instructions https://devcenter.heroku.com/articles/deploying-go
