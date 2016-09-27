@@ -44,7 +44,8 @@ http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
 
 Simple activities
 1. Fork a simple Go app (search github for this)
-2. Add a test file to the go App
+2. Add a test file to the go App in Git (*note, it doesn't have to be a real test. You can copy and paste any test, you want it to fail)
+3. Create a .yaml file
 
 More advanced
 1. Fork the GoServer from kindafearless
