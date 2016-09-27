@@ -52,7 +52,7 @@ Simplest Activity
               import "testing"
 
               func TestStubForTesting(t *testing.T){
-                expected := "of the king"
+                expected := "of the burger king"
                 actual := StubForTesting()
                 if actual != expected {
                   t.Errorf("Test failed, expected: '%s', got:  '%s'", expected, actual)
