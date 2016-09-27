@@ -41,3 +41,17 @@ https://devcenter.heroku.com/articles/container-registry-and-runtime
 
 AWS Deployment - ECS
 http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+
+Simple activities
+1. Fork a simple Go app (search github for this)
+2. Add a test file to the go App
+
+More advanced
+1. Fork the GoServer from kindafearless
+2. Integrate the forked repo with Travis CI
+3. Sign in to Travis CI with your github account
+
+For deploying to Heroku
+- Follow the instructions https://devcenter.heroku.com/articles/deploying-go
+* you need this file to deploy to heroku
+Add the repo to Travis CI
