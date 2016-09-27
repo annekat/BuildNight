@@ -42,7 +42,7 @@ https://devcenter.heroku.com/articles/container-registry-and-runtime
 AWS Deployment - ECS
 http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
 
-Simplest Activity
+## Simplest Activity
 
 1. Fork the GoServer from kindafearless
 2. Add a test file to the go App in Git (let's use a hello world test and make it fail)
