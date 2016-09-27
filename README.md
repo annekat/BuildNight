@@ -44,13 +44,15 @@ http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
 
 Simple activities
 1. Fork a simple Go app (search github for this)
-2. Add a test file to the go App in Git (*note, it doesn't have to be a real test. You can copy and paste any test, you want it to fail)
+
 3. Create a .yaml file
 
-More advanced
+
 1. Fork the GoServer from kindafearless
-2. Integrate the forked repo with Travis CI
-3. Sign in to Travis CI with your github account
+2. Add a test file to the go App in Git (*note, it doesn't have to be a real test. You can copy and paste any test, you want it to fail)
+3. Update the yaml file with script: ./hello_test (or the name of your test file)
+4. Add the forked repo with Travis CI
+5. 
 
 For deploying to Heroku
 - Follow the instructions https://devcenter.heroku.com/articles/deploying-go
