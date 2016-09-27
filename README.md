@@ -46,15 +46,16 @@ Simplest Activity
 
 1. Fork the GoServer from kindafearless
 2. Add a test file to the go App in Git (let's use a hello world test and make it fail)
-                package hello
+- name the file "testing"
+               package main
 
               import "testing"
 
-              func TestHello(t *testing.T){
-                expected := "Hello Go!"
-                actual := hello()
+              func TestStubForTesting(t *testing.T){
+                expected := "of the king"
+                actual := StubForTesting()
                 if actual != expected {
-                  t.Error("Test failed")
+                  t.Errorf("Test failed, expected: '%s', got:  '%s'", expected, actual)
                 }
               }
 4. Add the forked repo with Travis CI
@@ -62,8 +63,9 @@ Simplest Activity
 6. In github, select Test 
 7. Go back to Travis - you should see the test has failed
 8. Add a hello world command to the Git Hub repo so the test will pass
-  in goserver.go, add the following command to the very end //hello world!
-    fmt.Printf("Hello, world.\n")
+  in goserver.go, add the following command to the very end 
+    func StubForTesting() string {
+    return "of the burger king"
 
 For deploying to Heroku
 - Follow the instructions https://devcenter.heroku.com/articles/deploying-go
